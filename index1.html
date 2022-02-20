@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title> Nuevas caracteristicas de HTML5 en formularios </title>
+</head>
+<body>
+<h1> Nuevas caracteristicas de HTML5 en formularios </h1>
+<p><em><strong> Esto es un ejemplo sobre las nuevas caracteristicas de HTML5 en formularios </strong></em></p>
+<form id="form-order">
+<p>
+<label for="name"> Nombre (obligatorio) </label>
+<input type="text" name="name" id="name" placeholder="juan pérez"
+autofocus
+autocomplete
+required>
+</p>
+<p>
+<label for="passwd"> Contraseña (obligatorio) </label>
+<input type="password" name="passwd" id="passwd"
+placeholder="qwe1234"
+pattern="[a-z]{3}[0-9]{4}"
+required/> (la contraseña debe contener 3 letras y 4 numeros en este orden)
+</p>
+<p>
+<label for="fone"> Telefono </label>
+<input type="tel" name="phone" id="phone" placeholder="+7965453635">
+</p>
+<p>
+<label for="email"> Email</label>
+<input type="email" name="email" id="email" placeholder="ejemplo@email.com">
+</p>
+<p>
+<label for="website"> Tu pagina web </label>
+<input type="url" name="website" id="website" placeholder="http://www.tuweb.com">
+</p>
+<p>
+<label for="numberexemple"> Nº de temas </label>
+<input type="numberexemple" id="numberexemple" min="2" max="14" placeholder="2" step="2"> (entre 2 y 14, solo pares)
+</p>
+<p>
+<label for="deliverydate"> Fecha de envio </label>
+<input type="date" name="deliverydate" id="deliverydate" min="2022-02-01"> (minimu 01 de febrero 2022)
+</p>
+<p>
+<label for="colorexemple"> Color del item </label>
+<input type="color" name="colorexemple" id="colorexemple" value="#1A33FF">
+</p>
+<p>
+<libel for="search"> Buscar </label>
+<input type="search" name="search" id="search">
+</p>
+<p>
+<fieldset>
+<legend> Selecciona una prioridad </legend>
+<p>
+<label><input type="radio" name="priority" value="baja" checked> Baja </label>
+</p>
+<p>
+<label><input type="radio" name="priority" value="Media"> Media</label></p>
+<p>
+<label><input type="radio" name="priority" value="alta"> Alta </label>
+</p>
+</fieldset>
+</p>
+<p>
+<fieldset>
+<legend> Selecciona el tipo de envio </legend>
+<p><label><input type="checkbox" name="deliverytype" value="urgente"> checked Urgente </label></p>
+<p><label><input type="checkbox" name="deliverytype" value="acuse"> Con acuse de recibo </label></p>
+<p><label><input type="checkbox" name="deliverytype" value="reembolso"> Contra reembolso </label></p>
+</fieldset>
+</p>
+<canvas id="myCanvas" width="800" height="300" style="border:5px solid #FF531A;">
+</canvas>
+<svg width="900" height="200">
+  <polygon points="200,10 140,198 290,78 110,78 260,198"
+  style="fill:yellow;stroke:blue;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "25px Arial";
+ctx.fillText("MOHAMED ZBAIR ZBAIR", 150, 80);
+</script>
+<BR>
+<div class="mf-veil" style="display: none;"></div>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
